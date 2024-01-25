@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4e8d9; 
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff6f61; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+#todo-app {
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Slightly larger and softer box shadow */
+    border-radius: 20px; /* Larger border radius for a rounded appearance */
+}
+
+#task-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #007bff;
+    border-radius: 10px; /* Slightly rounded input field */
+    font-size: 1.2em;
+    color: #007bff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Add a smooth transition for border color */
+}
+
+#task-input:focus {
+    border-color: #0056b3; /* Change border color on focus */
+}
+
+#add-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Slightly rounded corners for the button */
+    cursor: pointer;
+    font-size: 1.3em; /* Slightly larger font size */
+    transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+    background-color: #0056b3; 
+}
+
+#add-button::before {
+    content: '\2713'; 
+    margin-right: 10px;
+}
+
+.delete-button {
+    margin-left: 15px;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #bd2130; 
+}
+
+.delete-button::before {
+    content: '\2716'; 
+    margin-right: 8px;
+}
